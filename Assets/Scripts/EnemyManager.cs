@@ -29,10 +29,7 @@ public class EnemyManager : MonoBehaviour
 
         foreach (var enemy in _enemyResource)
         {
-            for (var i = 0; i < 5; i++)
-            {
-                InstantiateEnemies(enemy);
-            }
+            InstantiateEnemies(enemy);
         }
         
         foreach (var enemy in _enemyResource)
@@ -46,6 +43,6 @@ public class EnemyManager : MonoBehaviour
         var enemy = Instantiate(enemyResource, transform);
         
         _enemies.Add(enemy);
-        enemy.SetActive(false);
+        //enemy.SetActive(false);
     }
 }

@@ -99,7 +99,7 @@ public class Clyde : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().sprite = _currentSprite;
     }
 
-    //Randomly select Left or Right direction if going down iis not possible 
+    //Randomly select Left or Right direction if going down is not possible 
     private void ChooseDirection()
     {
         _directionToChoose = Random.value > 0.5;
